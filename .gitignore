@@ -26,6 +26,7 @@
 .project
 .settings
 .springBeans
+.mvn
 
 ### IntelliJ IDEA ###
 .idea
