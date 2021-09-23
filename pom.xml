@@ -31,6 +31,8 @@
         <repackage.classifier>2.6</repackage.classifier>
         <spring-native.version>0.10.3</spring-native.version>
         <spring.version>2.5.4</spring.version>
+        <fastjson.version>1.2.72</fastjson.version>
+        <guava.version>28.1-jre</guava.version>
     </properties>
 
     <dependencyManagement>
@@ -86,8 +88,19 @@
                 <version>${junit.versin}</version>
                 <scope>test</scope>
             </dependency>
-        </dependencies>
 
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.guava</groupId>
+                <artifactId>guava</artifactId>
+                <version>${guava.version}</version>
+            </dependency>
+        </dependencies>
     </dependencyManagement>
 
 

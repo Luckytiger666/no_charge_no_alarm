@@ -4,6 +4,7 @@
 
 package com.example.alarmrecevicer.controller;
 
+import com.dingxiang.alarm.core.AlarmWrapper;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,6 +18,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class AlarmListener {
     @GetMapping("/healthCheck")
     public boolean healthCheck(){
+        return true;
+    }
+
+    @GetMapping("/test")
+    public boolean test(){
+        AlarmWrapper.getInstance().sendMsg("YYY", "cnm");
         return true;
     }
 }

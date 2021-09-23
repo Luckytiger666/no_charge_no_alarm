@@ -1,0 +1,2 @@
+com.dingxiang.alarm.core.execut.spi.LogExecute
+com.dingxiang.alarm.core.execut.spi.NoneExecute
